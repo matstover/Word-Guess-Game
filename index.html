@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="./assets/javascript/game.js"></script>
+
+    <title>Word Guess Game</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Guess the Art Movement...</h1>
+            <p class="lead">Guess a letter and try to spell the whole name of the art movement before you run out of turns.</p>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            Guess the Art Movement
+        </div>
+        <button type="button" class="btn btn-primary">
+            Wins
+            <span class="badge badge-light">
+                <div id=score></div>
+            </span>
+            <span class="sr-only"></span>
+        </button>
+        <div class="card-body">
+            <h5 id="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Start
+                <div id=start></div>
+            </a>
+        </div>
+        <div class="card-footer text-muted">
+            Wrong Letters
+            <div id="wordsWrong"></div>
+        </div>
+    </div>
+    <!-- <script>
+    // document.getElementById("card-title").innerHTML = var (artMovements);{
+        
+    // }
+    </script> -->
+
+</body>
+
+</html>
